@@ -1,3 +1,2 @@
-<% provide(:title, 'Help') %>
 <h1>Writer Inside Help</h1>
 <p>If you need any help with the website, please let us know.</p>
