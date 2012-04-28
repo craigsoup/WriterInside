@@ -1,0 +1,26 @@
+	<header class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+					<%= image_tag "pen.png", alt: "Writer Inside",
+						class: "header-image" %>
+						<%= link_to '<span class="writer">Writer</span><span class="inside">Inside</span>'.html_safe,	root_path, id: "logo" %>
+				<nav>
+					<ul class="nav pull-right">
+						<li><%= link_to "Home",		root_path %></li>
+						<li><%= link_to "Help",		help_path %></li>
+						<li><%= link_to "About Us",	about_path %></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="navbar-below">
+				<div class="container">
+						<nav>
+								<ul class="nav pull-right">
+										<li>More Options</li>
+										<li>Another More Options</li>
+								</ul>
+						</nav>
+				</div>
+		</div>
+	</header>

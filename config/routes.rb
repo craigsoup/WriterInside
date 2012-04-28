@@ -1,7 +1,10 @@
 WriterInside::Application.routes.draw do
-  get "static_pages/home"
-	get "static_pages/about"
-  get "static_pages/help"
+  get "users/new"
+
+		root :to => "static_pages#home"
+		match '/signup', to: 'users#new'
+		match '/about', to: 'static_pages#about'
+		match '/help', to: 'static_pages#help'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
